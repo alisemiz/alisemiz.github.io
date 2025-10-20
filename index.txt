@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Semiz - Kişisel Portfolyo</title>
+    <meta name="description" content="Ali Semiz - Atatürk Üniversitesi Bilgisayar Mühendisliği Öğrencisi. Python, Java, Kotlin ve SQLite yeteneklerimi sergilediğim kişisel portfolyo sitem.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="about">
+            <img src="assets/img/profil.jpeg" alt="Ali Semiz Profil Fotoğrafı" class="profile-picture">
+            <h1>Ali Semiz</h1>
+            <p class="subtitle">Atatürk Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
+            <p class="bio">
+                Atatürk Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak, teknolojiye ve problem çözmeye derinden bağlıyım. Algoritmik düşünme yeteneğimi; Python, Java ve Kotlin dillerindeki yetkinliğimle birleştirerek verimli ve ölçeklenebilir çözümler üretmeyi hedefliyorum.
+                <br><br>
+                Mobil ve masaüstü uygulama geliştirme süreçlerine hakimim ve SQLite ile veri yönetimi konusunda pratik deneyime sahibim. Öğrenme sürecimi sürekli aktif tutarak, temiz kod yazma prensiplerini benimsiyor ve yazılım geliştirme alanında kariyerime sağlam bir başlangıç yapmayı amaçlıyorum.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/alisemiz" target="_blank" title="GitHub Profilim"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/alisemiz/" target="_blank" title="LinkedIn Profilim"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:alisemiz2727@gmail.com" title="E-posta Gönder"><i class="fas fa-envelope"></i> E-posta</a>
+            </div>
+        </header>
+
+        <section class="projects">
+            <h2>Öne Çıkan Projelerim</h2>
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <h3>C ve SQLite ile Finans Takip Sistemi</h3>
+                    <p>C dilinde, SQLite veritabanı kullanarak gelir ve giderleri yöneten bir konsol tabanlı finans takip sistemi geliştirdim.</p>
+                    <div class="tags">
+                        <span>C</span>
+                        <span>SQLite</span>
+                        <span>Veri Yönetimi</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="project-card">
+                    <h3>JavaFX ile Öğrenci Bilgi Sistemi</h3>
+                    <p>Java ve JavaFX teknolojilerini kullanarak not takibi ve öğrenci yönetimi yapabilen bir masaüstü uygulaması geliştirdim.</p>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>Masaüstü</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Python ile Konsol Uygulamaları</h3>
+                    <p>Algoritmik problem çözme yeteneğimi geliştirmek amacıyla çeşitli veri yapıları ve konseptleri içeren bir dizi konsol uygulaması yazdım.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Algoritma</span>
+                        <span>Problem Çözme</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Ali Semiz. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
