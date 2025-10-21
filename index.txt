@@ -10,26 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">Ali Semiz</a>
-            <ul class="nav-links">
-                <li><a href="#about">Hakkımda</a></li>
-                <li><a href="#skills">Yetenekler</a></li>
-                <li><a href="#projects">Projeler</a></li>
+            <button class="hamburger" id="hamburger-button" aria-label="Menüyü aç/kapat">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-item">Hakkımda</a></li>
+                <li><a href="#skills" class="nav-item">Yetenekler</a></li>
+                <li><a href="#projects" class="nav-item">Projeler</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero" id="hero">
         <div class="hero-content">
-            <img src="assets/img/profil.jpeg" alt="Ali Semiz Profil Fotoğrafı" class="profile-picture">
-            <h1>Ali Semiz</h1>
-            <p class="subtitle">Atatürk Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
-            <div class="social-links">
+            <img src="assets/img/profil.jpeg" alt="Ali Semiz Profil Fotoğrafı" class="profile-picture" data-aos="zoom-in">
+            <h1 data-aos="fade-down" data-aos-delay="100">Ali Semiz</h1>
+            <p class="subtitle" data-aos="fade-down" data-aos-delay="200">Atatürk Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://github.com/alisemiz" target="_blank" title="GitHub Profilim"><i class="fab fa-github"></i> GitHub</a>
                 <a href="https://www.linkedin.com/in/alisemiz/" target="_blank" title="LinkedIn Profilim"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="mailto:alisemiz2727@gmail.com" title="E-posta Gönder"><i class="fas fa-envelope"></i> E-posta</a>
@@ -38,7 +45,7 @@
     </section>
 
     <main class="container">
-        <section id="about" class="about content-section">
+        <section id="about" class="about content-section" data-aos="fade-up">
             <h2>Hakkımda</h2>
             <p class="bio">
                 Atatürk Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak, teknolojiye ve problem çözmeye derinden bağlıyım. Algoritmik düşünme yeteneğimi; Python, Java ve Kotlin dillerindeki yetkinliğimle birleştirerek verimli ve ölçeklenebilir çözümler üretmeyi hedefliyorum.
@@ -47,22 +54,22 @@
             </p>
         </section>
 
-        <section id="skills" class="skills content-section">
+        <section id="skills" class="skills content-section" data-aos="fade-up">
             <h2>Yeteneklerim</h2>
             <div class="skill-grid">
-                <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-                <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
-                <div class="skill-item"><i class="fab fa-android"></i><span>Kotlin</span></div>
-                <div class="skill-item"><i class="fas fa-database"></i><span>SQLite</span></div>
-                <div class="skill-item"><i class="fab fa-c"></i><span>C Dili</span></div>
-                <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-java"></i><span>Java</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="150"><i class="fab fa-android"></i><span>Kotlin</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-database"></i><span>SQLite</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-c"></i><span>C Dili</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
             </div>
         </section>
 
-        <section id="projects" class="projects content-section">
+        <section id="projects" class="projects content-section" data-aos="fade-up">
             <h2>Öne Çıkan Projelerim</h2>
             <div class="project-grid">
-                <article class="project-card">
+                <article class="project-card" data-aos="fade-up">
                     <h3>C ve SQLite ile Finans Takip Sistemi</h3>
                     <p>C dilinde, SQLite veritabanı kullanarak gelir ve giderleri yöneten bir konsol tabanlı finans takip sistemi geliştirdim.</p>
                     <div class="tags">
@@ -70,7 +77,7 @@
                     </div>
                     <a href="https://github.com/alisemiz/Finans-Takip-Uygulamas-.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
                 </article>
-                <article class="project-card">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <h3>JavaFX ile Öğrenci Bilgi Sistemi</h3>
                     <p>Java ve JavaFX teknolojilerini kullanarak not takibi ve öğrenci yönetimi yapabilen bir masaüstü uygulaması geliştirdim.</p>
                     <div class="tags">
@@ -78,7 +85,7 @@
                     </div>
                     <a href="https://github.com/alisemiz/OgrenciBilgiSistemi.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
                 </article>
-                <article class="project-card">
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <h3>Python ile Konsol Uygulamaları</h3>
                     <p>Algoritmik problem çözme yeteneğimi geliştirmek amacıyla çeşitli veri yapıları ve konseptleri içeren bir dizi konsol uygulaması yazdım.</p>
                     <div class="tags">
@@ -99,5 +106,9 @@
     </button>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
