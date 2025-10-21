@@ -12,8 +12,7 @@
 
 html {
   scroll-behavior: smooth;
-  /* GÜNCELLEME: Navbar için kaydırma dolgusu */
-  scroll-padding-top: 80px;
+  scroll-padding-top: 70px; /* Navbar yüksekliği kadar boşluk bırakır */
 }
 
 @keyframes fadeIn {
@@ -35,12 +34,13 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden; /* Yatay kaydırmayı engeller */
 }
 
-/* --- YENİ: Navigasyon Menüsü Stili --- */
+/* --- Navigasyon Menüsü --- */
 .navbar {
   width: 100%;
-  background-color: rgba(13, 17, 23, 0.85); /* Cam efekti */
+  background-color: rgba(13, 17, 23, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   position: fixed;
@@ -92,8 +92,8 @@ body {
 /* --- Hero Bölümü --- */
 .hero {
   width: 100%;
-  height: 60vh;
-  min-height: 400px;
+  height: 70vh;
+  min-height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("assets/img/banner.jpg");
   background-size: cover;
@@ -103,10 +103,17 @@ body {
   align-items: center;
   text-align: center;
   color: var(--text-color-light);
+  padding-top: 70px; /* Navbar'ın altına inmesini önlemek için */
+  box-sizing: border-box;
 }
+
 .hero-content {
   animation: fadeIn 1s ease-out forwards;
+  padding: 2rem;
+  max-width: 700px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Okunurluğu artırmak için metin gölgesi */
 }
+
 .hero .profile-picture {
   width: 150px;
   height: 150px;
@@ -116,19 +123,22 @@ body {
   object-fit: cover;
   box-shadow: 0 0 25px var(--glow-color);
 }
+
 .hero h1 {
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
 }
+
 .hero .subtitle {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--text-color);
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
+
 .hero .social-links a {
-  color: var(--text-color);
+  color: var(--text-color-light);
   text-decoration: none;
   font-weight: bold;
   margin: 0 1rem;
@@ -138,6 +148,7 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
 .hero .social-links a:hover {
   color: var(--primary-color);
   transform: scale(1.1);
@@ -149,12 +160,16 @@ body {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
+  margin: 0 auto;
 }
+
 .content-section {
-  padding-top: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   animation: fadeIn 1s 0.2s ease-out forwards;
   opacity: 0;
 }
+
 .about {
   text-align: center;
 }
@@ -189,7 +204,7 @@ body {
   color: var(--secondary-text);
 }
 
-/* --- YENİ: Yetenekler (Skills) Bölümü --- */
+/* --- Yetenekler (Skills) Bölümü --- */
 .skills {
   text-align: center;
 }
@@ -217,7 +232,7 @@ body {
   box-shadow: 0 5px 20px var(--glow-color);
 }
 .skill-item i {
-  font-size: 3rem; /* İkonları büyüttük */
+  font-size: 3rem;
   color: var(--primary-color);
 }
 .skill-item span {
@@ -305,9 +320,9 @@ footer {
   border-top: 1px solid var(--border-color);
 }
 
-/* --- YENİ: Yukarı Çık Butonu --- */
+/* --- Yukarı Çık Butonu --- */
 #scrollTopBtn {
-  display: none; /* JavaScript ile gösterilecek */
+  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -330,19 +345,42 @@ footer {
 }
 
 /* --- Mobil Cihaz Düzenlemeleri --- */
-@media (min-width: 768px) {
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
-  } /* Mobilde menüyü gizle (daha sonra açılır menü eklenebilir) */
+  }
+  .hero {
+    height: 80vh;
+    min-height: 450px;
+  }
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .hero .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .skill-item {
+    padding: 1rem;
+  }
+  .skill-item i {
+    font-size: 2rem;
+  }
+  .skill-item span {
+    font-size: 0.9rem;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
