@@ -427,3 +427,105 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* --- YENİ: Yazılarım Bölümü Stilleri --- */
+.blog {
+  text-align: center;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobilde tek sütun */
+  gap: 1.5rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+.blog-card {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none; /* Link alt çizgisini kaldır */
+  color: var(--text-color);
+  display: block; /* Tüm kartın tıklanabilir olması için */
+  transition: all 0.3s ease;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+}
+.blog-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+.blog-card p {
+  color: var(--secondary-text);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  /* Yazının çok uzaması durumunda kesip ... ekler (isteğe bağlı) */
+  /* display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+}
+.read-more {
+  color: var(--primary-color);
+  font-weight: bold;
+  display: inline-block; /* İkonla hizalamak için */
+  transition: transform 0.3s ease;
+}
+.read-more i {
+  margin-left: 0.3rem;
+}
+.blog-card:hover .read-more {
+  transform: translateX(5px); /* Hover'da ok sağa kaysın */
+}
+
+/* --- YENİ: CV Butonu Stili --- */
+.btn-cv {
+  background-color: transparent;
+  border: 1px solid var(--secondary-text); /* Daha az dikkat çeken renk */
+  color: var(--secondary-text);
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: inline-flex; /* İkonla hizala */
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem; /* Diğer linklerden ayır */
+  font-size: 0.9rem; /* Biraz daha küçük */
+}
+
+.btn-cv:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--bg-color-dark);
+}
+
+/* Blog gridini masaüstünde 2 sütun yapalım */
+@media (min-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Küçük ekranda CV butonunu daha uygun hale getirelim */
+@media (max-width: 480px) {
+  .social-links {
+    display: flex;
+    flex-direction: column; /* Linkleri alt alta getir */
+    align-items: center;
+    gap: 1rem; /* Aralarına boşluk koy */
+  }
+  .social-links a {
+    margin: 0;
+  } /* Yan boşlukları kaldır */
+  .btn-cv {
+    margin-left: 0;
+  } /* Sol boşluğu kaldır */
+}
