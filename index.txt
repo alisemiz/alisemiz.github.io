@@ -68,6 +68,7 @@
                 <div class="skill-item" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-file-code"></i><span>C++</span></div>
                 <div class="skill-item" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-js"></i><span>JavaScript</span></div>
                 <div class="skill-item" data-aos="fade-up" data-aos-delay="450"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-react"></i><span>React</span></div>
             </div>
         </section>
 
@@ -122,6 +123,12 @@
                     <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
                     <a href="https://github.com/alisemiz/tarif-defteri-web.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
                 </article>
+                <article class="project-card" data-aos="fade-up" data-aos-delay="800">
+                    <h3>Kanban Proje Yönetim Panosu (React + Firebase)</h3>
+                    <p>Modern React özellikleri ve sunucusuz mimariyi sergileyen, pürüzsüz Sürükle-Bırak (Drag & Drop) işlevselliğine sahip bir kanban panosu.</p>
+                    <div class="tags"><span>React</span><span>Firebase</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+                    <a href="https://github.com/alisemiz/react-kanban-trello-clone.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                </article>
             </div>
         </section>
 
@@ -138,13 +145,11 @@
                     <p>Derin öğrenme modellerinin “düşünme” şeklini incelerken, zekanın ve farkındalığın ne anlama geldiğini yeniden sorgulamak zorundayız...</p>
                     <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
                 </a>
-                
                 <a href="https://medium.com/@alisemiz2727/bilgisayar-bilimlerini-anlamak-neden-sadece-kod-yazmak-demek-de%C4%9Fil-a9d5b1b2186b" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="200">
                     <h4>Bilgisayar Bilimlerini Anlamak: Neden Sadece Kod Yazmak Demek Değil?</h4>
                     <p>“Bilgisayar Bilimleri” (Computer Science) dendiğinde, çoğumuzun aklına ne geliyor? Muhtemelen karanlık bir odada...</p>
                     <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
                 </a>
-                
                 <a href="https://medium.com/@alisemiz2727/bilgisayar-bilimlerinin-s%C4%B1rr%C4%B1-karma%C5%9F%C4%B1kl%C4%B1kla-sava%C5%9Fma-sanat%C4%B1-51f63a40311b" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="300">
                     <h4>Bilgisayar Bilimlerinin Sırrı: Karmaşıklıkla Savaşma Sanatı</h4>
                     <p>Kod yazmayı öğrendiniz. Peki ama neden “Fonksiyon” diye bir şey var? Neden “API” kullanıyoruz veya “Nesneye Yönelik Programlama” öğrenmek zorundayız?</p>
