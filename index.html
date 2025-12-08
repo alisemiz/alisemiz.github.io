@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Semiz - Kişisel Portfolyo</title>
-    <meta name="description" content="Ali Semiz - Atatürk Üniversitesi Bilgisayar Mühendisliği Öğrencisi. Python, Java, Kotlin ve SQLite yeteneklerimi sergilediğim kişisel portfolyo sitem.">
+    <title>Ali Semiz | Bilgisayar Mühendisliği Öğrencisi & Geliştirici</title>
+    <meta name="description" content="Ali Semiz - Modern web teknolojileri, yapay zeka ve oyun geliştirme üzerine odaklanan Bilgisayar Mühendisliği öğrencisi.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
@@ -18,187 +18,175 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">Ali Semiz</a>
-            <button class="hamburger" id="hamburger-button" aria-label="Menüyü aç/kapat">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+            <button class="hamburger" id="hamburger-button" aria-label="Menü">
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about" class="nav-item">Hakkımda</a></li>
-                <li><a href="#skills" class="nav-item">Yetenekler</a></li>
-                <li><a href="#projects" class="nav-item">Projeler</a></li>
-                <li><a href="#blog" class="nav-item">Yazılarım</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#blog">Yazılar</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero" id="hero">
         <div class="hero-content">
-            <img src="assets/img/profil.jpeg" alt="Ali Semiz Profil Fotoğrafı" class="profile-picture" data-aos="zoom-in">
-            <h1 data-aos="fade-down" data-aos-delay="100">Ali Semiz</h1>
-            <p class="subtitle" data-aos="fade-down" data-aos-delay="200">Atatürk Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
-            <div class="social-links" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://github.com/alisemiz" target="_blank" title="GitHub Profilim"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/alisemiz/" target="_blank" title="LinkedIn Profilim"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:alisemiz2727@gmail.com" title="E-posta Gönder"><i class="fas fa-envelope"></i> E-posta</a>
-                <a href="assets/CV/AliSemiz_CV.pdf" target="_blank" class="btn btn-cv" title="CV'mi İndir"><i class="fas fa-file-download"></i> CV İndir</a>
+            <img src="assets/img/profil.jpeg" alt="Ali Semiz" class="profile-picture" data-aos="zoom-in">
+            <h1 data-aos="fade-up">Merhaba, Ben Ali.</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+                Modern Web Teknolojileri, Yapay Zeka ve Oyun Geliştirme ile ilgilenen<br>
+                Bilgisayar Mühendisliği Öğrencisi.
+            </p>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://github.com/alisemiz" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/alisemiz/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="assets/CV/AliSemiz_CV.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-download"></i> CV İndir</a>
             </div>
         </div>
     </section>
 
     <main class="container">
-        <section id="about" class="about content-section" data-aos="fade-up">
+        <section id="about" data-aos="fade-up">
             <h2>Hakkımda</h2>
-            <p class="bio">
-                Atatürk Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak, teknolojiye ve problem çözmeye derinden bağlıyım. Algoritmik düşünme yeteneğimi; Python, Java ve Kotlin dillerindeki yetkinliğimle birleştirerek verimli ve ölçeklenebilir çözümler üretmeyi hedefliyorum.
-                <br><br>
-                Mobil ve masaüstü uygulama geliştirme süreçlerine hakimim ve SQLite ile veri yönetimi konusunda pratik deneyime sahibim. Öğrenme sürecimi sürekli aktif tutarak, temiz kod yazma prensiplerini benimsiyor ve yazılım geliştirme alanında kariyerime sağlam bir başlangıç yapmayı amaçlıyorum.
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: var(--text-secondary);">
+                Atatürk Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Karmaşık problemleri basit ve ölçeklenebilir çözümlere dönüştürmeyi seviyorum. 
+                Full-stack web geliştirme (React, Firebase, Flask) ve Yapay Zeka entegrasyonları üzerine yoğunlaşıyorum. 
+                Aynı zamanda oyun geliştirme motorları ve mimarileri üzerine araştırmalar yapıyorum.
             </p>
         </section>
 
-        <section id="skills" class="skills content-section" data-aos="fade-up">
-            <h2>Yeteneklerim</h2>
-            <div class="skill-grid">
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="50"><i class="fab fa-python"></i><span>Python</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-java"></i><span>Java</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="150"><i class="fab fa-android"></i><span>Kotlin</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-database"></i><span>SQLite</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-c"></i><span>C Dili</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-file-code"></i><span>C++</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="450"><i class="fas fa-fire"></i><span>Firebase</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-react"></i><span>React</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="550"><i class="fas fa-flask"></i><span>Flask</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="600"><i class="fas fa-bolt"></i><span>Vite</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="650"><i class="fab fa-css3-alt"></i><span>Tailwind</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="700"><i class="fas fa-map-marked-alt"></i><span>Leaflet.js</span></div>
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="750"><i class="fas fa-cogs"></i><span>Maven</span></div>
+        <section id="skills" data-aos="fade-up">
+            <h2>Teknik Yetkinlikler</h2>
+            
+            <div class="skills-category">
+                <h3>Programlama Dilleri</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                    <div class="skill-item"><i class="fas fa-code"></i><span>C++</span></div>
+                    <div class="skill-item"><i class="fab fa-android"></i><span>Kotlin</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Frontend & Web</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><i class="fab fa-react"></i><span>React</span></div>
+                    <div class="skill-item"><i class="fas fa-bolt"></i><span>Vite</span></div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>Tailwind CSS</span></div>
+                    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5/CSS3</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Backend & Veri</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                    <div class="skill-item"><i class="fas fa-flask"></i><span>Flask</span></div>
+                    <div class="skill-item"><i class="fas fa-database"></i><span>SQLite</span></div>
+                    <div class="skill-item"><i class="fas fa-server"></i><span>SQL</span></div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Araçlar & Diğer</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+                    <div class="skill-item"><i class="fas fa-cogs"></i><span>Maven</span></div>
+                    <div class="skill-item"><i class="fas fa-map-marked-alt"></i><span>Leaflet.js</span></div>
+                </div>
             </div>
         </section>
 
-        <section id="projects" class="projects content-section" data-aos="fade-up">
-            <h2>Öne Çıkan Projelerim</h2>
+        <section id="projects">
+            <h2>Seçilmiş Projeler</h2>
             <div class="project-grid">
+                
                 <article class="project-card" data-aos="fade-up">
-                    <h3>C ve SQLite ile Finans Takip Sistemi</h3>
-                    <p>C dilinde, SQLite veritabanı kullanarak gelir ve giderleri yöneten bir konsol tabanlı finans takip sistemi geliştirdim.</p>
-                    <div class="tags"><span>C</span><span>SQLite</span><span>Veri Yönetimi</span></div>
-                    <a href="https://github.com/alisemiz/Finans-Takip-Uygulamas-.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                    <h3>AI Destekli Metin Özetleyici</h3>
+                    <div class="tags">
+                        <span>React</span><span>Flask</span><span>Python</span><span>OpenAI API</span>
+                    </div>
+                    <p>Uzun Türkçe metinleri analiz eden ve yüksek doğrulukla özetleyen Full-Stack web uygulaması. Modern frontend ve güçlü bir backend mimarisi içerir.</p>
+                    <a href="https://github.com/alisemiz/ai-ozetleyici-projesi.git" target="_blank" class="btn"><i class="fab fa-github"></i> İncele</a>
                 </article>
+
                 <article class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>JavaFX ile Öğrenci Bilgi Sistemi</h3>
-                    <p>Java ve JavaFX teknolojilerini kullanarak not takibi ve öğrenci yönetimi yapabilen bir masaüstü uygulaması geliştirdim.</p>
-                    <div class="tags"><span>Java</span><span>JavaFX</span><span>Masaüstü</span></div>
-                    <a href="https://github.com/alisemiz/OgrenciBilgiSistemi.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                    <h3>Canlı Konum Takip Prototipi</h3>
+                    <div class="tags">
+                        <span>React</span><span>Tailwind</span><span>Firebase</span><span>Leaflet</span>
+                    </div>
+                    <p>Gerçek zamanlı harita verileriyle çalışan, kurye/araç takibi simülasyonu. Websocket benzeri gerçek zamanlı veri akışı sağlar.</p>
+                    <a href="https://canli-kurye-takip.web.app" target="_blank" class="btn"><i class="fas fa-external-link-alt"></i> Canlı Demo</a>
                 </article>
+
                 <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Python ile Konsol Uygulamaları</h3>
-                    <p>Algoritmik problem çözme yeteneğimi geliştirmek amacıyla çeşitli veri yapıları ve konseptleri içeren bir dizi konsol uygulaması yazdım.</p>
-                    <div class="tags"><span>Python</span><span>Algoritma</span></div>
-                    <a href="https://github.com/alisemiz/python-script-collection.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+                    <h3>Kanban Proje Yönetim Panosu</h3>
+                    <div class="tags">
+                        <span>React</span><span>Firebase</span><span>DnD</span>
+                    </div>
+                    <p>Trello benzeri, sürükle-bırak özellikli görev yönetim uygulaması. Sunucusuz mimari (Serverless) ile anlık veri senkronizasyonu.</p>
+                    <a href="https://github.com/alisemiz/react-kanban-trello-clone.git" target="_blank" class="btn"><i class="fab fa-github"></i> İncele</a>
                 </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Sinema Otomasyon Sistemi</h3>
-                    <p>Java, JavaFX ve SQLite kullanarak geliştirdiğim masaüstü sinema otomasyon sistemi.</p>
-                    <div class="tags"><span>Java</span><span>JavaFX</span><span>SQLite</span></div>
-                    <a href="https://github.com/alisemiz/SinemaOtomasyonu.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+
+                <article class="project-card" data-aos="fade-up">
+                    <h3>Etkinlik Yönetim Platformu</h3>
+                    <div class="tags">
+                        <span>React</span><span>Vite</span><span>Firestore</span><span>Auth</span>
+                    </div>
+                    <p>Kullanıcıların etkinlik oluşturabildiği, katılabildiği kapsamlı bir sosyal platform. Kimlik doğrulama ve gerçek zamanlı veritabanı entegrasyonu.</p>
+                    <a href="https://github.com/alisemiz/Etkinlik-Platformu-Web.git" target="_blank" class="btn"><i class="fab fa-github"></i> İncele</a>
                 </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <h3>Otel Rezervasyon Sistemi</h3>
-                    <p>Python, SQLite ve Tkinter kullanarak geliştirdiğim masaüstü otel rezervasyon sistemi.</p>
-                    <div class="tags"><span>Python</span><span>SQLite</span><span>Tkinter</span></div>
-                    <a href="https://github.com/alisemiz/OtelRezervasyonSistemi.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>2D Platform Oyun Motoru</h3>
+                    <div class="tags">
+                        <span>Java</span><span>JavaFX</span><span>Maven</span><span>Game Dev</span>
+                    </div>
+                    <p>Hazır oyun motoru kullanmadan, Java ile sıfırdan geliştirilmiş fizik, çarpışma ve render motoruna sahip 2D oyun altyapısı.</p>
+                    <a href="https://github.com/alisemiz/JavaFXPlatformerGame.git" target="_blank" class="btn"><i class="fab fa-github"></i> İncele</a>
                 </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="500">
-                    <h3>C++ ve SFML ile Yılan Oyunu</h3>
-                    <p>Klasik Yılan oyununun C++ ve SFML kütüphanesi kullanılarak geliştirilmiş modern bir versiyonudur. Temel oyun mekaniklerini içerir.</p>
-                    <div class="tags"><span>C++</span><span>SFML</span><span>Oyun</span></div>
-                    <a href="https://github.com/alisemiz/SFML-Yilan-Oyunu.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
+
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Sinefil Asistanı</h3>
+                    <div class="tags">
+                        <span>JavaFX</span><span>TMDb API</span><span>SQLite</span>
+                    </div>
+                    <p>TMDb API entegrasyonu ile film verilerini çeken, kişisel izleme listeleri oluşturan modern arayüzlü masaüstü uygulaması.</p>
+                    <a href="https://github.com/alisemiz/SinefilAsistani-JavaFX.git" target="_blank" class="btn"><i class="fab fa-github"></i> İncele</a>
                 </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <h3>Sinefil Asistanı (JavaFX Sinema Uygulaması)</h3>
-                    <p>TMDb API'sini kullanan, JavaFX ile geliştirilmiş masaüstü sinema keşif ve izleme listesi uygulaması.</p>
-                    <div class="tags"><span>Java</span><span>JavaFX</span><span>API</span><span>SQLite</span></div>
-                    <a href="https://github.com/alisemiz/SinefilAsistani-JavaFX.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
-                </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="700">
-                    <h3>Tarif Defteri Web Uygulaması</h3>
-                    <p>Saf HTML, CSS ve JavaScript ile oluşturulmuş, Firebase sunucusuz mimarisini kullanan tam özellikli bir tarif yönetim platformu.</p>
-                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
-                    <a href="https://github.com/alisemiz/tarif-defteri-web.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
-                </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="800">
-                    <h3>Kanban Proje Yönetim Panosu (React + Firebase)</h3>
-                    <p>Modern React özellikleri ve sunucusuz mimariyi sergileyen, pürüzsüz Sürükle-Bırak (Drag & Drop) işlevselliğine sahip bir kanban panosu.</p>
-                    <div class="tags"><span>React</span><span>Firebase</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
-                    <a href="https://github.com/alisemiz/react-kanban-trello-clone.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
-                </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="900">
-                    <h3>AI Destekli Metin Özetleyici (Full-Stack Projesi)</h3>
-                    <p>Python/Flask backend ve React/Vite frontend'den oluşan, uzun Türkçe metinleri analiz ederek yüksek doğruluklu özetler çıkaran bir web uygulaması.</p>
-                    <div class="tags"><span>React</span><span>Python</span><span>Flask</span><span>AI/ML</span><span>Full-Stack</span></div>
-                    <a href="https://github.com/alisemiz/ai-ozetleyici-projesi.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
-                </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="1000">
-                    <h3>Etkinlik Platformu Web</h3>
-                    <p>React/Vite, Firebase (Firestore, Auth) entegrasyonu ile geliştirilmiş, tam kapsamlı bir etkinlik yönetim platformu.</p>
-                    <div class="tags"><span>React</span><span>Vite</span><span>Firebase</span><span>JavaScript</span></div>
-                    <a href="https://github.com/alisemiz/Etkinlik-Platformu-Web.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
-                </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="1100">
-                    <h3>Canlı Konum Takip Prototipi (React + Firebase)</h3>
-                    <p>React, Tailwind CSS ve Firebase kullanılarak, React Leaflet & OpenStreetMap ile entegre edilmiş bir canlı konum takip prototipi.</p>
-                    <div class="tags"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Firebase</span><span>Leaflet.js</span></div>
-                    <a href="https://canli-kurye-takip.web.app" class="btn" target="_blank">Canlı Demo <i class="fas fa-external-link-alt"></i></a>
-                </article>
-                <article class="project-card" data-aos="fade-up" data-aos-delay="1200">
-                    <h3>JavaFX 2D Platform Oyunu Motoru</h3>
-                    <p>Java ve JavaFX ile sıfırdan geliştirilmiş, ana menü, seviyeler ve düşman mekanikleri gibi tüm çekirdek bileşenleri içeren 2D oyun motoru.</p>
-                    <div class="tags"><span>Java</span><span>JavaFX</span><span>Maven</span><span>Oyun Geliştirme</span></div>
-                    <a href="https://github.com/alisemiz/JavaFXPlatformerGame.git" class="btn" target="_blank">Kodu Görüntüle <i class="fab fa-github"></i></a>
-                </article>
+
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://github.com/alisemiz?tab=repositories" target="_blank" class="btn" style="border-style: dashed;">Diğer Projelerimi Gör <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
             </div>
         </section>
 
-        <section id="blog" class="blog content-section" data-aos="fade-up">
-            <h2>Yazılarım & Paylaşımlarım</h2>
+        <section id="blog" data-aos="fade-up">
+            <h2>Son Yazılarım</h2>
             <div class="blog-grid">
-                <a href="https://medium.com/@alisemiz777/agiyi-beklerken-yanl%C4%B1%C5%9F-yere-bakt%C4%B1k-gelecek-d%C3%BC%C5%9F%C3%BCnen-de%C4%9Fil-hisseden-makinelerde-bb3b41d43cb9" target="_blank" class="blog-card" data-aos="fade-up">
-                    <h4>AGI’yı Beklerken Yanlış Yere Baktık: Gelecek ‘Düşünen’ Değil, ‘Hisseden’ Makinelerde</h4>
-                    <p>“Terminatör” senaryolarını bırakın. Asıl kırılma, bir yapay zekanın ilk kez canının sıkılmasıyla başlayacak.</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
+                
+                <a href="https://medium.com/@alisemiz777/agiyi-beklerken-yanl%C4%B1%C5%9F-yere-bakt%C4%B1k-gelecek-d%C3%BC%C5%9F%C3%BCnen-de%C4%9Fil-hisseden-makinelerde-bb3b41d43cb9" target="_blank" class="blog-card">
+                    <h4>AGI ve Hisseden Makineler</h4>
+                    <p>Yapay zeka geleceği üzerine fütüristik bir bakış: Makineler sadece düşünecek mi, yoksa hissetmeye de başlayacak mı?</p>
+                    <span class="read-more">Okumaya Devam Et <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="https://medium.com/@alisemiz2727/makine-%C3%B6%C4%9Frenmesi-bir-bilin%C3%A7-yaratabilir-mi-kara-kutu-nun-i%CC%87%C3%A7ine-felsefi-bir-yolculuk-482a08843b6e" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Makine Öğrenmesi Bir Bilinç Yaratabilir mi? “Kara Kutu”nun İçine Felsefi Bir Yolculuk</h4>
-                    <p>Derin öğrenme modellerinin “düşünme” şeklini incelerken, zekanın ve farkındalığın ne anlama geldiğini yeniden sorgulamak zorundayız...</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
+
+                <a href="https://medium.com/@alisemiz2727/makine-%C3%B6%C4%9Frenmesi-bir-bilin%C3%A7-yaratabilir-mi-kara-kutu-nun-i%CC%87%C3%A7ine-felsefi-bir-yolculuk-482a08843b6e" target="_blank" class="blog-card">
+                    <h4>Makine Öğrenmesi ve Bilinç</h4>
+                    <p>Derin öğrenme modellerinin "kara kutusuna" felsefi bir yolculuk. Algoritmalar bir gün gerçekten "anlayabilir" mi?</p>
+                    <span class="read-more">Okumaya Devam Et <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="https://medium.com/@alisemiz2727/bilgisayar-bilimlerini-anlamak-neden-sadece-kod-yazmak-demek-de%C4%9Fil-a9d5b1b2186b" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="200">
-                    <h4>Bilgisayar Bilimlerini Anlamak: Neden Sadece Kod Yazmak Demek Değil?</h4>
-                    <p>“Bilgisayar Bilimleri” dendiğinde, çoğumuzun aklına ne geliyor? Muhtemelen karanlık bir odada...</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
+
+                <a href="https://medium.com/@alisemiz2727/bilgisayar-bilimlerini-anlamak-neden-sadece-kod-yazmak-demek-de%C4%9Fil-a9d5b1b2186b" target="_blank" class="blog-card">
+                    <h4>Kod Yazmanın Ötesi: CS</h4>
+                    <p>Bilgisayar Mühendisliği neden sadece kodlamaktan ibaret değildir? Algoritmik düşünce ve mühendislik disiplini üzerine.</p>
+                    <span class="read-more">Okumaya Devam Et <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="https://medium.com/@alisemiz2727/bilgisayar-bilimlerinin-s%C4%B1rr%C4%B1-karma%C5%9F%C4%B1kl%C4%B1kla-sava%C5%9Fma-sanat%C4%B1-51f63a40311b" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="300">
-                    <h4>Bilgisayar Bilimlerinin Sırrı: Karmaşıklıkla Savaşma Sanatı</h4>
-                    <p>Kod yazmayı öğrendiniz. Peki ama neden “Fonksiyon” diye bir şey var? Neden “API” kullanıyoruz veya “Nesneye Yönelik Programlama” öğrenmek zorundayız?</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://medium.com/@alisemiz2727/otomata-teorisinin-teknik-temelleri-diller-makineler-ve-hesaplama-hiyerar%C5%9Fisi-49a1d922d22a" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="400">
-                    <h4>Otomata Teorisinin Teknik Temelleri: Diller, Makineler ve Hesaplama Hiyerarşisi</h4>
-                    <p>Otomata teorisinin temellerini, dilleri, makineleri ve Chomsky hiyerarşisini inceleyen bir yazı.</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://medium.com/@alisemiz2727/javan%C4%B1n-uzun-%C3%B6m%C3%BCl%C3%BCl%C3%BC%C4%9F%C3%BCn%C3%BCn-anatomisi-bir-platform-olarak-dil-tasar%C4%B1m%C4%B1-06bfdad8e5e3" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="500">
-                    <h4>Java’nın Uzun Ömürlülüğünün Anatomisi: Bir Platform Olarak Dil Tasarımı</h4>
-                    <p>Java'yı sadece bir dil değil, bir platform olarak ayakta tutan tasarım kararlarını ve uzun ömürlülüğünün sırlarını inceleyen bir yazı.</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://medium.com/@alisemiz2727/%C3%A7eviklik-agility-bir-y%C3%B6netim-metodu-de%C4%9Fil-bir-m%C3%BChendislik-disiplinidir-644108790cbf" target="_blank" class="blog-card" data-aos="fade-up" data-aos-delay="600">
-                    <h4>Çeviklik (Agility) Bir Yönetim Metodu Değil, Bir Mühendislik Disiplinidir</h4>
-                    <p>Agile'ın popüler yanlış anlaşılmalarının ötesinde, temelindeki teknik mühendislik disiplinlerini ve gerçek çevikliğin nasıl sağlandığını inceleyen bir yazı.</p>
-                    <span class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></span>
-                </a>
+
             </div>
         </section>
     </main>
